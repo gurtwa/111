@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Star Jedi";
+  src: url("../fonts/star-jedi.ttf");
+}
+
+body * {
+  font-family: "Star Jedi", Arial, sans-serif;
+  text-transform: lowercase;
+}
+
+body {
+  background-color: #000000;
+  min-height: 100vh;
+  overflow-y: hidden;
+  background-image: url(../images/at-st.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section {
+  padding: 2rem;
+}
+git commit
+
+
+h1.title {
+  color: #000000;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.column.is-one-quarter {
+  max-width: 25%;
+}
+
+.select.is-large select {
+  font-size: 1rem;
+}
+
+.is-large {
+  font-size: 1rem !important;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  margin-right: 1rem;
+}
+
+.button {
+  background-color: #000000;
+  color: white;
+}
+
+#byIdBlock,
+#byQueryBlock {
+  display: flex;
+  gap: 1rem;
+}
+
+#content {
+  max-height: 35vh;
+  min-height: 35vh;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+#result-container {
+  visibility: hidden;
+}
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.spinner {
+  visibility: hidden;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .column.is-one-quarter {
+    max-width: 25%;
+  }
+
+  .column {
+    margin: 0 auto;
+    min-width: 20%;
+  }
+
+  .search {
+    justify-content: center;
+  }
+
+  h1.title {
+    text-align: left;
+    font-size: 4rem;
+  }
+}
